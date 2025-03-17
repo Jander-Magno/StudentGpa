@@ -46,12 +46,15 @@
             int firstDigit = (int) (gradePonitAverage * 10) % 10;
             int secondDigit = (int) (gradePonitAverage * 100) % 10;
 
-            Console.WriteLine($"{course1Name} {course1Grade} {course1Credit}");
-            Console.WriteLine($"{course2Name} {course2Grade} {course2Credit}");
-            Console.WriteLine($"{course3Name} {course3Grade} {course3Credit}");
-            Console.WriteLine($"{course4Name} {course4Grade} {course4Credit}");
-            Console.WriteLine($"{course5Name} {course5Grade} {course5Credit}");
-            Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
+            Console.WriteLine($"Student: {studentName}\n");
+            Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
+
+            Console.WriteLine($"{course1Name}\t\t{course1Grade}\t{course1Credit}");
+            Console.WriteLine($"{course2Name}\t\t{course2Grade}\t{course2Credit}");
+            Console.WriteLine($"{course3Name}\t\t{course3Grade}\t{course3Credit}");
+            Console.WriteLine($"{course4Name}\t{course4Grade}\t{course4Credit}");
+            Console.WriteLine($"{course5Name}\t\t{course5Grade}\t{course5Credit}");
+            Console.WriteLine($"\nFinal GPA:\t\t{leadingDigit}.{firstDigit}{secondDigit}");
         }
     }
 }
